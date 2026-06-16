@@ -39,6 +39,29 @@ YOUR_SECRET_KEY
 YOUR_SERVER_PUBLIC_IP
 yourdomain.com
 
+6.1 Production starter if above don't work
+
+```
+listening-port=3478
+tls-listening-port=5349
+
+fingerprint
+lt-cred-mech
+
+use-auth-secret
+static-auth-secret=YOUR_SECRET_KEY
+
+realm=yourdomain.com
+
+# Public IP
+external-ip=YOUR_SERVER_PUBLIC_IP
+
+no-multicast-peers
+no-loopback-peers
+stale-nonce
+simple-log
+```
+
 7. Open Firewall Ports:
 
 ```
